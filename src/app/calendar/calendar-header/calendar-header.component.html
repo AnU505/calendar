@@ -1,0 +1,14 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div class="calendar-header" fxLayoutAlign="center center" fxFlex.lt-md="100%" fxFlex.gt-sm="800px">
+        <app-calendar-controls [classes]="['prev', 'next']"></app-calendar-controls>
+        <h1> <b>{{ currentMonth}}</b> {{date.getFullYear()}} </h1>
+    </div>
+
+
+</div>
+
+<div fxLayoutAlign="center center" fxFlexLayout="row">
+    <div fxLayoutAlign="center center" fxFlex.lt-md="100%" fxFlex.gt-sm="800px" class="weekdays">
+        <span fxLayout="row" *ngFor="let day of weekDays; let i = index"> {{ day }} </span>
+    </div>
+</div>

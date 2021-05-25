@@ -1,0 +1,23 @@
+.prev {
+  position: absolute;
+  left: 30%;
+  top: 4%;
+}
+.next {
+  position: absolute;
+  right: 30%;
+  top: 4%;
+}
+
+.controls {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 300px) and  (max-width:1000px) {
+  .next {
+    right: 18%;
+  }
+  .prev {
+    left: 18%;
+  }
+}
