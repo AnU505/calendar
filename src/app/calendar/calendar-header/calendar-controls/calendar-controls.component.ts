@@ -17,7 +17,7 @@ export class CalendarControlsComponent implements OnInit {
     this.calendarDataService.getWeeks();
   }
   onNext(): void {
-    this.calendarDataService.prevMonth();
+    this.calendarDataService.nextMonth();
     this.calendarDataService.getWeeks();
 
   }

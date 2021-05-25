@@ -21,6 +21,7 @@ export class CalendarBodyComponent implements OnInit, OnDestroy {
     this.today = new Date().getDate();
     this.subscription = this.calendarDataService.weeksSubject.subscribe(next => {
       this.weeks = next;
+      this.month = this.calendarDataService.currentMonth();
     });
   }
 
